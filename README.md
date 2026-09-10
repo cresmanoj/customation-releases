@@ -23,6 +23,8 @@ user (do not run the entire setup as root):
 curl -fL https://github.com/cresmanoj/customation-releases/releases/download/v0.3.0/customation-0.3.0-linux-amd64.tar.gz -o customation.tar.gz
 curl -fL https://raw.githubusercontent.com/cresmanoj/customation-releases/main/vendor-public.pem -o vendor-public.pem
 sha256sum vendor-public.pem
+curl -fL https://github.com/cresmanoj/customation-releases/releases/download/v0.3.0/customation-0.3.0-linux-amd64.tar.gz.sig -o customation.tar.gz.sig
+openssl pkeyutl -verify -pubin -inkey vendor-public.pem -rawin -in customation.tar.gz -sigfile customation.tar.gz.sig
 tar -xzf customation.tar.gz
 mkdir -p "$HOME/rtl-project"
 cd customation-0.3.0-linux-amd64
