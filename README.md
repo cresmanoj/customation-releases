@@ -19,7 +19,7 @@ does not install it into VS Code's separate Remote SSH extension host.
 
 ## Install a published release
 
-Download the Linux AMD64 bundle from [Releases](../../releases). Once version 0.3.0
+Download the Linux AMD64 bundle from [Releases](https://github.com/cresmanoj/customation-releases/releases). Once version 0.3.0
 is published, run these commands on the Ubuntu workspace host as your ordinary
 user (do not run the entire setup as root):
 
