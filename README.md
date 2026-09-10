@@ -12,6 +12,10 @@ initial setup. The installer installs Docker Engine, Compose and VS Code if need
 For a Windows laptop or Mac, use VS Code Remote SSH to open a supported Ubuntu
 workspace host after installing the bundle there. A native Windows/macOS installer
 is not included. Docker and simulation execute on the Ubuntu host.
+In the Remote SSH window, use **Extensions: Install from VSIX** to select
+`debugger.vsix` from the extracted bundle on that host, and install it into the
+SSH workspace. Installing an extension in the Ubuntu desktop's VS Code alone
+does not install it into VS Code's separate Remote SSH extension host.
 
 ## Install a published release
 
